@@ -1,0 +1,11 @@
+{% if subjects_list %}
+    <ul>
+    {% for subject in subjects_list %}
+        <li><a href="/scheduler/data">{{ subject.name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No subjects are available.</p>
+{% endif %}
+
+
